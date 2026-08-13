@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | StockSync</title>
+  <meta name="description" content="Get in touch with the StockSync team to book a demo or ask a question about our retail inventory system." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Stock<span>Sync</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
+        <span class="hamburger"></span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Features</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <h1>Get in touch</h1>
+        <p>Questions about pricing, setup, or a specific feature? We'd love to hear from you.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-layout">
+
+        <div class="contact-info">
+          <h2>Contact details</h2>
+          <div class="icon-row">
+            <div class="icon" aria-hidden="true" style="border-radius:50%;">@</div>
+            <div>
+              <strong>Email</strong><br />
+              <a href="mailto:hello@stocksync.example">hello@stocksync.example</a>
+            </div>
+          </div>
+          <div class="icon-row">
+            <div class="icon" aria-hidden="true" style="border-radius:50%;">#</div>
+            <div>
+              <strong>Phone</strong><br />
+              <a href="tel:1800555188">1800 555 188</a>
+            </div>
+          </div>
+          <div class="icon-row">
+            <div class="icon" aria-hidden="true" style="border-radius:50%;">&#9679;</div>
+            <div>
+              <strong>Office hours</strong><br />
+              Mon&ndash;Fri, 9am&ndash;5pm AEST
+            </div>
+          </div>
+
+          <h2 style="margin-top:32px;">Follow us</h2>
+          <div class="social-links">
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="StockSync on LinkedIn">in</a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="StockSync on Instagram">ig</a>
+            <a href="https://www.x.com" target="_blank" rel="noopener" aria-label="StockSync on X">x</a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form" novalidate>
+          <h2>Send us a message</h2>
+
+          <div class="form-row">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" required minlength="2" placeholder="Bijaya Sharma" autocomplete="name" aria-describedby="name-error" />
+            <p class="field-error" id="name-error" aria-live="polite"></p>
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" required placeholder="bijaya@xyz.com" autocomplete="email" aria-describedby="email-error" />
+            <p class="field-error" id="email-error" aria-live="polite"></p>
+          </div>
+
+          <div class="form-row">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required minlength="3" placeholder="Question about pricing" aria-describedby="subject-error" />
+            <p class="field-error" id="subject-error" aria-live="polite"></p>
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required minlength="10" placeholder="Tell us a bit about your store..." aria-describedby="message-error"></textarea>
+            <p class="field-hint">Minimum 10 characters.</p>
+            <p class="field-error" id="message-error" aria-live="polite"></p>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send message</button>
+
+          <p class="form-feedback" id="form-feedback" tabindex="-1" aria-live="assertive"></p>
+        </form>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <h2>StockSync</h2>
+        <p>Retail inventory, perfectly synced. Built for shop owners who'd rather be selling than counting stock.</p>
+      </div>
+      <nav aria-label="Footer">
+        <h2>Site map</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Features</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2>Get in touch</h2>
+        <p>hello@stocksync.example<br />1800 555 188</p>
+      </div>
+    </div>
+    <p class="footer-bottom">&copy; 2026 StockSync. All rights reserved. Student project for ICT726 Assignment 3.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

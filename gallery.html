@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | StockSync</title>
+  <meta name="description" content="See photos of StockSync's dashboard and retail partners, plus a short product demo video." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Stock<span>Sync</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
+        <span class="hamburger"></span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Features</a></li>
+          <li><a href="gallery.html" class="active" aria-current="page">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <h1>Gallery</h1>
+        <p>A look at StockSync in real stores, and a short video of the dashboard in action.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow" style="color:var(--color-primary); font-weight:700; text-transform:uppercase; letter-spacing:1.5px; font-size:0.8rem;">Photos</p>
+          <h2>Behind the scenes at our partner stores</h2>
+          <p>Click any photo to view a larger version.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <button type="button" class="gallery-item" data-full="https://picsum.photos/seed/stock-tablet/1400/900" data-caption="A store assistant checking stock counts on a tablet.">
+            <img src="https://picsum.photos/seed/stock-tablet/500/350" alt="Store assistant checking stock counts on a tablet" />
+          </button>
+
+          <button type="button" class="gallery-item" data-full="https://picsum.photos/seed/barcode-scan/1400/900" data-caption="Barcode scanning a delivery box in the storeroom.">
+            <img src="https://picsum.photos/seed/barcode-scan/500/350" alt="Barcode scanning a delivery box in the storeroom" />
+          </button>
+
+          <button type="button" class="gallery-item" data-full="https://picsum.photos/seed/retail-shelving/1400/900" data-caption="Fully stocked retail shelving after a delivery.">
+            <img src="https://picsum.photos/seed/retail-shelving/500/350" alt="Fully stocked retail shelving after a delivery" />
+          </button>
+
+          <button type="button" class="gallery-item" data-full="https://picsum.photos/seed/boutique-storeroom/1400/900" data-caption="A small boutique storeroom organised with labelled boxes.">
+            <img src="https://picsum.photos/seed/boutique-storeroom/500/350" alt="Small boutique storeroom organised with labelled boxes" />
+          </button>
+
+          <button type="button" class="gallery-item" data-full="https://picsum.photos/seed/pos-counter/1400/900" data-caption="Point-of-sale counter in a busy retail store.">
+            <img src="https://picsum.photos/seed/pos-counter/500/350" alt="Point-of-sale counter in a busy retail store" />
+          </button>
+
+          <button type="button" class="gallery-item" data-full="https://picsum.photos/seed/warehouse-aisle/1400/900" data-caption="Warehouse aisle stocked with inventory boxes.">
+            <img src="https://picsum.photos/seed/warehouse-aisle/500/350" alt="Warehouse aisle stocked with inventory boxes" />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div class="barcode-divider" aria-hidden="true"></div>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow" style="color:var(--color-primary); font-weight:700; text-transform:uppercase; letter-spacing:1.5px; font-size:0.8rem;">Video</p>
+          <h2>A 30-second look at the dashboard</h2>
+        </div>
+        <div class="video-frame" style="max-width:760px; margin:0 auto;">
+          <video controls preload="metadata" poster="https://picsum.photos/seed/dashboard-video/1200/675">
+            <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4" />
+            Your browser does not support the video tag. You can
+            <a href="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4">download the video</a> instead.
+          </video>
+        </div>
+        <p style="text-align:center; color:var(--color-muted); margin-top:12px;">Placeholder demo clip used for this student prototype.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox overlay -->
+  <div class="lightbox-overlay" id="lightbox-overlay" hidden role="dialog" aria-modal="true" aria-label="Enlarged photo">
+    <div class="lightbox-box">
+      <button type="button" class="lightbox-close" aria-label="Close enlarged photo">&times;</button>
+      <img src="" alt="" />
+      <p class="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <h2>StockSync</h2>
+        <p>Retail inventory, perfectly synced. Built for shop owners who'd rather be selling than counting stock.</p>
+      </div>
+      <nav aria-label="Footer">
+        <h2>Site map</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Features</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2>Get in touch</h2>
+        <p>hello@stocksync.example<br />1800 555 0199</p>
+      </div>
+    </div>
+    <p class="footer-bottom">&copy; 2026 StockSync. All rights reserved. Student project for ICT726 Assignment 3.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
